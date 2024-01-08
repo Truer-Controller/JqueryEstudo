@@ -36,20 +36,17 @@
                 const getIntervaloAtual = () => parseInt($elemento.attr('wm-relogio'))
 
                 let temporizador = null
-
                 const iniciar = () => {
                     if(temporizador) clearInterval(temporizador)
                     temporizador = setInterval(() => {
                         horaCerta.html(new Date().toLocaleString('pt-BR'))
                     }, getIntervaloAtual())
                 }
-
                 const alterarIntervalo = delta => {
                     const novo = Math.max(getIntervaloAtual() + delta, 1000)
                     $elemento.attr('wm-relogio', novo)
                     inicia()
                 }
-
                 botaoMenos.click(e => alterarIntervalo(1000))
                 botaoMais.click(e => alterarIntervalo(-1000))
                 iniciar()
