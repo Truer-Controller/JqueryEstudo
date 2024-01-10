@@ -23,6 +23,9 @@
     <div id='animar'>Animar!</div>
 
     <script>        
-        // ...
+        $('button').click(e => {
+            const t = 450
+            $('#animar').hide(t).show(t)
+        })
     </script>
 </body>
