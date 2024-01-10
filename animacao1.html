@@ -25,7 +25,11 @@
     <script>        
         $('button').click(e => {
             const t = 450
-            $('#animar').hide(t).show(t)
+            //$('#animar').hide(t).show(t)
+            //$('#animar').toggle(t).toggle(t)
+            //$('#animar').fadeOut(t).fadeIn(t)
+            $('#animar').slideUp(t).slideDown(t)
+            $('#animar').slideToggle(t).slideToggle(t)
         })
     </script>
 </body>
