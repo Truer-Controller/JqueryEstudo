@@ -18,7 +18,7 @@
 
         $(this).addClass('temporizador')
         $(this).append(horaDezena,horaUnidade,separadorHora,minutoDezena,minutoUnidade,separadorMinuto,segundoDezena,segundoUnidade,mensagem)
-        //teste
+        //teste1    
 
         return this
     }
